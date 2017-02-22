@@ -14,7 +14,7 @@ Course::~Course()
 
 bool Course::EnrollStudent(Student newStudent, int position)
 {
-	if (position<=9 && _students[position].GetName() != "Null")
+	if (position<=9 && _students[position].GetName() == "Null")
 	{
 		_students[position] = newStudent;
 		return true;
